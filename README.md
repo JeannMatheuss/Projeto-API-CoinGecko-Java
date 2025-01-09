@@ -1,18 +1,21 @@
-## Getting Started
+# Consultando sua CriptoMoeda em Java com a API CoinGecko
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é um programa em Java que permite consultar a cotação atual de criptomoedas em relação ao dólar (USD) utilizando a API pública do CoinGecko.
 
-## Folder Structure
+## Funcionalidades
 
-The workspace contains two folders by default, where:
+- Solicita ao usuário o nome de uma criptomoeda.
+- Faz uma requisição HTTP para obter a cotação atual da criptomoeda informada.
+- Exibe a resposta da API com o preço da criptomoeda em dólar (USD).
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Requisitos
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **Java 11 ou superior**: O programa utiliza a classe `HttpClient`, introduzida no Java 11.
+- **Conexão com a Internet**: Necessária para realizar a requisição à API do CoinGecko.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Como executar
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. Certifique-se de ter o Java 11 ou superior instalado.
+2. Compile o programa com o seguinte comando:
+   ```bash
+   javac ConsultaCotacaoCripto.java
